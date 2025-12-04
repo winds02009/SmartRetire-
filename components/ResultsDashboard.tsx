@@ -168,7 +168,9 @@ export const ResultsDashboard: React.FC<ResultsDashboardProps> = ({
           <div className="space-y-2">
               <p className="text-sm text-slate-500 font-medium flex items-center gap-1">
                 預估退休淨資產 (Net Worth)
-                <HelpCircle className="w-3.5 h-3.5 text-slate-300 cursor-help" title="總資產減去屆時剩餘負債" />
+                <span title="總資產減去屆時剩餘負債" className="cursor-help">
+                  <HelpCircle className="w-3.5 h-3.5 text-slate-300" />
+                </span>
               </p>
               <p className="text-3xl sm:text-4xl font-bold text-slate-800 font-mono tracking-tight">
                 {formatCurrency(finalResult.netWorth)}
